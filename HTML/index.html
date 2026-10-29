@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coding Conf 2026 - a one-day tech conference in Papine, Kingston on October 26, 2026.">
+  <title>Coding Conf 2026 | Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Decorative background shapes (hidden from assistive technology) -->
+  <div class="decor" aria-hidden="true">
+    <img class="decor__circle decor__circle--top" src="../assets/images/pattern-circle.svg" alt="">
+    <img class="decor__circle decor__circle--mid" src="../assets/images/pattern-circle.svg" alt="">
+    <img class="decor__squiggle-top" src="../assets/images/pattern-squiggly-line-top.svg" alt="">
+    <picture>
+      <source media="(min-width: 64em)" srcset="../assets/images/pattern-squiggly-line-bottom-desktop.svg">
+      <img class="decor__squiggle-bottom" src="../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+    </picture>
+  </div>
+
+  <header class="site-header">
+    <a class="site-header__logo" href="index.html">
+      <img src="../assets/images/logo-full.svg" alt="Coding Conf home" width="209" height="30">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="site-nav__link" href="#schedule">Schedule</a></li>
+        <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+        <li><a class="site-nav__link" href="login.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <!-- Hero: event title, metadata and primary call to action -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">One day. One city. Endless code.</p>
+      <h1 id="hero-title" class="hero__title">
+        Coding Conf <span class="gradient-text">2026</span> is Coming to Kingston!
+      </h1>
+      <p class="hero__lead">
+        Join developers, designers and tech enthusiasts for a full day of talks,
+        workshops and networking at the region's most exciting coding conference.
+      </p>
+
+      <ul class="event-meta" aria-label="Event details">
+        <li class="event-meta__item">
+          <span class="event-meta__label">Date</span>
+          <time class="event-meta__value" datetime="2026-10-26">October 26, 2026</time>
+        </li>
+        <li class="event-meta__item">
+          <span class="event-meta__label">Location</span>
+          <span class="event-meta__value">Papine, Kgn</span>
+        </li>
+        <li class="event-meta__item">
+          <span class="event-meta__label">Seats</span>
+          <span class="event-meta__value">Limited</span>
+        </li>
+      </ul>
+
+      <a class="btn btn--large" href="login.html">Register Now</a>
+    </section>
+
+    <!-- About: uses a floated figure so the text wraps around it -->
+    <section class="about glass-panel" aria-labelledby="about-title">
+      <figure class="about__figure">
+        <img src="../assets/images/logo-mark.svg" alt="" width="40" height="40">
+        <figcaption>Built by developers, for developers.</figcaption>
+      </figure>
+      <h2 id="about-title" class="section-title">About the Conference</h2>
+      <p>
+        Coding Conf brings together people who love building for the web. Whether you
+        are writing your first line of HTML or shipping production applications, you
+        will leave with new ideas, new skills and new friends.
+      </p>
+      <p>
+        Expect hands-on sessions covering semantic HTML, modern CSS layout, accessible
+        design and JavaScript fundamentals, plus a lightning-talk stage where attendees
+        share their own projects.
+      </p>
+    </section>
+
+    <!-- Schedule: responsive grid of session cards -->
+    <section id="schedule" class="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title" class="section-title">Event Schedule</h2>
+      <ol class="schedule__list">
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T08:30">8:30 AM</time>
+          <h3 class="schedule__name">Registration &amp; Breakfast</h3>
+          <p>Collect your badge, grab a coffee and meet fellow attendees.</p>
+        </li>
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T09:30">9:30 AM</time>
+          <h3 class="schedule__name">Opening Keynote</h3>
+          <p>The future of the open web and why fundamentals still matter.</p>
+        </li>
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T11:00">11:00 AM</time>
+          <h3 class="schedule__name">Modern CSS Workshop</h3>
+          <p>Grid, Flexbox, custom properties and the new functional selectors.</p>
+        </li>
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T13:00">1:00 PM</time>
+          <h3 class="schedule__name">Lunch &amp; Networking</h3>
+          <p>Connect with speakers, sponsors and the local dev community.</p>
+        </li>
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T14:00">2:00 PM</time>
+          <h3 class="schedule__name">Accessible JavaScript</h3>
+          <p>Building interactive forms that work for everyone.</p>
+        </li>
+        <li class="schedule__card glass-panel">
+          <time class="schedule__time" datetime="2026-10-26T16:00">4:00 PM</time>
+          <h3 class="schedule__name">Lightning Talks &amp; Closing</h3>
+          <p>Five-minute demos from attendees, then prizes and farewells.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FAQ: native details/summary elements are keyboard accessible by default -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+      <details class="faq__item glass-panel">
+        <summary>Who can attend?</summary>
+        <p>Anyone with an interest in technology. Students and beginners are especially welcome.</p>
+      </details>
+      <details class="faq__item glass-panel">
+        <summary>What do I need to register?</summary>
+        <p>Your full name, email address, GitHub username and a profile photo (JPG or PNG under 500KB).</p>
+      </details>
+      <details class="faq__item glass-panel">
+        <summary>How do I get my ticket?</summary>
+        <p>Your personalised digital ticket is generated instantly after you complete the registration form.</p>
+      </details>
+    </section>
+
+    <section class="cta glass-panel" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="section-title">Ready to Secure Your Spot?</h2>
+      <p>Registration takes less than a minute.</p>
+      <a class="btn" href="login.html">Register Now</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Coding Conf &middot; Papine, Kingston, Jamaica</p>
+    <p>CIT2011 Web Programming &ndash; Individual Assignment #2</p>
+  </footer>
+</body>
+</html>

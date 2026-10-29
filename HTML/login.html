@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for Coding Conf 2026 and generate your personalised conference ticket.">
+  <title>Coding Conf 2026 | Register</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/validation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Decorative background shapes (hidden from assistive technology) -->
+  <div class="decor" aria-hidden="true">
+    <img class="decor__circle decor__circle--top" src="../assets/images/pattern-circle.svg" alt="">
+    <img class="decor__circle decor__circle--mid" src="../assets/images/pattern-circle.svg" alt="">
+    <img class="decor__squiggle-top" src="../assets/images/pattern-squiggly-line-top.svg" alt="">
+    <picture>
+      <source media="(min-width: 64em)" srcset="../assets/images/pattern-squiggly-line-bottom-desktop.svg">
+      <img class="decor__squiggle-bottom" src="../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+    </picture>
+  </div>
+
+  <header class="site-header">
+    <a class="site-header__logo" href="index.html">
+      <img src="../assets/images/logo-full.svg" alt="Coding Conf home" width="209" height="30">
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Home</a></li>
+        <li><a class="site-nav__link" href="index.html#schedule">Schedule</a></li>
+        <li><a class="site-nav__link" href="index.html#faq">FAQ</a></li>
+        <li><a class="site-nav__link" href="login.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="intro" aria-labelledby="form-title">
+      <h1 id="form-title" class="intro__title">
+        Your Journey to Coding Conf <span class="gradient-text">2026</span> Starts Here!
+      </h1>
+      <p class="intro__lead">Secure your spot at the year's biggest coding conference.</p>
+    </section>
+
+    <!-- novalidate: validation is handled by js/validation.js so errors appear in-place -->
+    <form id="register-form" class="form" novalidate>
+      <!-- Avatar upload -->
+      <div class="field">
+        <label class="field__label" for="avatar">Upload Avatar</label>
+        <div class="dropzone" id="dropzone">
+          <input class="visually-hidden" type="file" id="avatar" name="avatar"
+                 accept="image/jpeg, image/png" required
+                 aria-describedby="avatar-hint avatar-error">
+          <label class="dropzone__target" for="avatar">
+            <span class="dropzone__icon">
+              <img id="avatar-preview" src="../assets/images/icon-upload.svg" alt="">
+            </span>
+            <span class="dropzone__text" id="dropzone-text">Drag and drop or click to upload</span>
+          </label>
+          <div class="dropzone__actions" id="dropzone-actions" hidden>
+            <button type="button" class="btn-small btn-small--underline" id="remove-avatar">Remove image</button>
+            <button type="button" class="btn-small" id="change-avatar">Change image</button>
+          </div>
+        </div>
+        <p class="field__hint" id="avatar-hint">Upload your photo (JPG or PNG, max size: 500KB).</p>
+        <p class="field__error" id="avatar-error" aria-live="polite"></p>
+      </div>
+
+      <!-- Full name -->
+      <div class="field">
+        <label class="field__label" for="full-name">Full Name</label>
+        <input class="field__input" type="text" id="full-name" name="fullName"
+               autocomplete="name" required aria-describedby="full-name-error">
+        <p class="field__error" id="full-name-error" aria-live="polite"></p>
+      </div>
+
+      <!-- Email -->
+      <div class="field">
+        <label class="field__label" for="email">Email Address</label>
+        <input class="field__input" type="email" id="email" name="email"
+               placeholder="example@email.com" autocomplete="email" required
+               aria-describedby="email-error">
+        <p class="field__error" id="email-error" aria-live="polite"></p>
+      </div>
+
+      <!-- GitHub username -->
+      <div class="field">
+        <label class="field__label" for="github">GitHub Username</label>
+        <input class="field__input" type="text" id="github" name="github"
+               placeholder="@yourusername" autocomplete="username" required
+               autocapitalize="off" spellcheck="false" aria-describedby="github-error">
+        <p class="field__error" id="github-error" aria-live="polite"></p>
+      </div>
+
+      <button type="submit" class="btn btn--block">Generate My Ticket</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Coding Conf &middot; Papine, Kingston, Jamaica</p>
+    <p>CIT2011 Web Programming &ndash; Individual Assignment #2</p>
+  </footer>
+</body>
+</html>
